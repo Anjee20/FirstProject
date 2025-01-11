@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">        <style>
+            body{
+                background-image: url("img/bg1.jpg");
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.8em;
+            }
+            .headernav{
+                width: 1280px;
+                height: 50px;
+                background-color: #333;
+                margin: 20px auto;
+            }
+            .headernav > ul{
+                list-style: none;
+                height: 100% !important;
+            }
+            .headernav > ul > li:hover a{
+                background: #fff;
+            }
+            .headernav > ul > li{
+                float: left;
+            }
+            .headernav > ul > li >a{
+                display: inline-block;
+                height: 12px;
+                line-height: 12px;
+                padding: 19px;
+                color: white;
+                text-decoration: none;
+            }
+            .active{
+                background: #FF6347;
+            }            
+            .ufoimg{
+                background-image: url("img/ufo.png");
+                background-repeat: no-repeat;
+                background-size: 15px 15px;
+                background-position: 0px 15px;
+            }
+            .submenu{
+                background: #fff;
+                position: absolute;
+                top: 50px;
+                left: 0px;
+                list-style: none;
+                padding-left: 0px;
+                display: none;
+            }
+            .menu > li{
+                position: relative;
+            }
+            .submenu > li > a{
+                display: block;
+                width: 231px;
+                height: 60px;
+                background: #fff;
+                text-decoration: none;
+                color: #55555a;
+                padding-left: 19px;
+                line-height: 60px;
+            }
+            .menu > li > .submenu > li > a:hover{
+                background: #FF6347;
+                color: #fff;
+            }
+            .submenu1{
+                width: 250px;
+                height: 300px;
+                background: #fff;
+                background: blue;
+                position: absolute;
+                top: 0px;
+                left: 250px !important;
+            }
+            .submenu > li {
+                position: relative;
+            }
+            .menu li:hover > .submenu{
+                display: block;
+            }
+            .menu li:hover > a{
+                background: #FF6347;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="headernav">
+            <ul class="menu">
+                <li>
+                    <a href="#" class="ufoimg">Company Logo</a> 
+                </li>
+                <li>
+                    <a href="#" class="active">Active <i class="fa-solid fa-house"></i></a>
+                </li>
+                <li>
+                    <a href="#">Drop Down <i class="fa-light fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Item One</a>
+                        </li>
+                        <li>
+                            <a href="#">Item Left Side <i class="fa-light fa-chevron-left"></i></a>
+                            <ul class="submenu submenu1">
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Item Right Side <i class="fa-light fa-chevron-left"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">Item 4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Mega Menu <i class="fa-light fa-chevron-down"></i></a>
+                </li>
+                <li>
+                    <a href="#">Grid <i class="fa-light fa-chevron-down"></i></a>
+                </li>
+                <li>
+                    <a href="#">Tab Bar <i class="fa-light fa-chevron-down"></i></a>
+                </li>
+                <li>
+                    <a href="#">Images <i class="fa-light fa-chevron-down"></i></a>
+                </li>
+                <li>
+                    <a href="#">Contact <i class="fa-light fa-chevron-down"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
